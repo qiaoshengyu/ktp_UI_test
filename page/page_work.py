@@ -4,6 +4,9 @@ Author：樵夫
 Time：2020/6/1    11:20
 ====================================
 """
+import os
+
+os.environ['DISPLAY'] = ':0'
 import time
 from common.base_pase import BasePage
 from locator.work_locator import WorkLocator
