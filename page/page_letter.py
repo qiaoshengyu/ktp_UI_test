@@ -4,6 +4,7 @@ Author：樵夫
 Time：2020/5/31    19:13
 ====================================
 """
+import time
 from locator.letter_locator import LetterLocator
 from common.base_pase import BasePage
 
@@ -32,6 +33,7 @@ class PageLetter(BasePage):
 
     def get_self_send_info(self):
         """获取自己已发送的信息"""
+        time.sleep(3)
         try:
             ele = self.wait_element_visibility(LetterLocator.self_send_info, "私信页面，获取自己已发送的信息")
         except:
